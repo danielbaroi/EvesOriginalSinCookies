@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+    var body: some View
+    {
+        ZStack
+        {
+            Color(red: 1.0, green: 1.0, blue: 0.8)
+                .ignoresSafeArea()
+            
+            Image("EOSC_LOGO_MATTBLACK_transparent")
+                .resizable()
+                .ignoresSafeArea()
+                .aspectRatio(contentMode: .fit)
+                .frame(width:700, height: 600)
+            
+            
         }
         .padding()
+        .ignoresSafeArea()
+        
     }
 }
 
